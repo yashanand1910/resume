@@ -12,7 +12,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: Resume
+      name: Stable
       url: https://resume.yashanand.dev
     steps:
       - uses: actions/checkout@v2
