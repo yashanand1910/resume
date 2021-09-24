@@ -1,13 +1,17 @@
 name: Deploy
-'on': push
+
+on:
+  push:
+    branches: [master]
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel Previous Actions
-        uses: styfle/cancel-workflow-action@0.4.1
-        with:
-          access_token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
