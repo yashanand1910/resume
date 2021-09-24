@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "yashanand-dev"
+  },
+  "targets": {
+      "yashanand-dev": {
+        "hosting": {
+          "resume": [
+            "resume-yashanand-dev"
+          ]
+        }
+      }
+    }
+}
