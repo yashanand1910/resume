@@ -25,6 +25,17 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# IDEs and editors
+.idea/*
+!.idea/runConfigurations/
+!.idea/codeStyleSettings.xml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+xcuserdata/
+*.sublime-workspace
+
 # Misc
 *.log
-.idea
